@@ -32,7 +32,8 @@
                                      :source-map-timestamp true
                                      :preamble             ["react/react.min.js"]}}]
                 :figwheel-server server}]
-    (fig-auto/autobuild* config)))
+    (fig-auto/autobuild* config)
+    server))
 {{#less?}}
 (defn start-less []
   (future
